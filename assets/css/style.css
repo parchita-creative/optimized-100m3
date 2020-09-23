@@ -155,6 +155,10 @@ font-family: 'Lato', sans-serif;
 #header.header-scrolled {
  width: 100%;
 }
+#intro-video .d-none-smart{
+    display: none;
+  
+  }
 }
 
 #header .logo h1 a, #header .logo h1 a:hover {
@@ -517,7 +521,7 @@ section {
     width: 100%;
   }
 
-  #solution, #about, #funtions, #solution .solution-extra, #careers, #about .about-extra  {
+  #solution, #about, #functions, #solution .solution-extra, #careers, #about .about-extra  {
     padding: 20px 10px !important;
   }
   .pt-oc-5 {
@@ -728,42 +732,42 @@ p{
 }
 
 
-/* Funtions Us Section
+/* Functions Us Section
 --------------------------------*/
-#funtions {
+#functions {
   background: #fbfbfe;
   padding: 60px 0;
 }
 
-#funtions .funtions-container .background {
+#functions .functions-container .background {
   margin: 20px 0;
 }
 
-#funtions .funtions-container .content {
+#functions .functions-container .content {
   background: #fff;
 }
 
-#funtions .funtions-container .title {
+#functions .functions-container .title {
   color: #333;
   font-weight: 700;
   font-size: 32px;
 }
 
-#funtions .funtions-container p {
+#functions .functions-container p {
   line-height: 26px;
 }
 
-#funtions .funtions-container p:last-child {
+#functions .functions-container p:last-child {
   margin-bottom: 0;
 }
 
-#funtions .funtions-container .icon-box {
+#functions .functions-container .icon-box {
   background: transparent;
   background-size: cover;
   padding: 0 0 30px 0;
 }
 
-#funtions .funtions-container .icon-box .icon {
+#functions .functions-container .icon-box .icon {
   float: left;
   background: transparent;
   width: 64px;
@@ -772,64 +776,64 @@ p{
   transition: all 0.3s ease-in-out;
 }
 
-#funtions .funtions-container .icon-box .icon i {
+#functions .functions-container .icon-box .icon i {
   color: #fff;
   font-size: 24px;
 }
 
-#funtions .funtions-container .icon-box:hover .icon {
+#functions .functions-container .icon-box:hover .icon {
   background: transparent;
 }
 
-#funtions .funtions-container .icon-box:hover .icon i {
+#functions .functions-container .icon-box:hover .icon i {
   color: #fff;
 }
 
-#funtions .funtions-container .icon-box .title {
+#functions .functions-container .icon-box .title {
   margin-left: 80px;
   font-weight: 600;
   margin-bottom: 5px;
   font-size: 18px;
 }
 
-#funtions .funtions-container .icon-box .title a {
+#functions .functions-container .icon-box .title a {
   color: #283d50;
 }
 
-#funtions .funtions-container .icon-box .description {
+#functions .functions-container .icon-box .description {
   margin-left: 80px;
   line-height: 24px;
   font-size: 13px;
   margin-top: 20px;
 }
 
-#funtions .funtions-extra {
+#functions .functions-extra {
   padding-top: 60px;
 }
 
-#funtions .oc-btn{
+#functions .oc-btn{
   background-color: #f8f7fd;
     padding: 15px 30px;
     vertical-align: middle;
 }
 
-#funtions p.oc-btn{
+#functions p.oc-btn{
  color: #6975bf;
    font-size: 13px;
 }
-#funtions p.oc-btn img{
+#functions p.oc-btn img{
   margin-right: 10px;
   height: 20px;
 }
-#funtions p.oc-btn img.img-desk{
+#functions p.oc-btn img.img-desk{
   height: 15px;
 }
 
-#funtions h5 {
+#functions h5 {
   font-size: 15px;
     line-height: 3.5;
 }
-#funtions .icon img{
+#functions .icon img{
   height: 40px;
 }
 
