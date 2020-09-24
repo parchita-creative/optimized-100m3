@@ -1,6 +1,7 @@
 <?php
  
   $receiving_email_address = 'andres@100m3.com';
+ 
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
@@ -12,10 +13,9 @@
   $contact->ajax = true;
   
   $contact->to = $receiving_email_address;
-  $contact->from_first = $_POST['first-name'];
-   $contact->from_last = $_POST['last-name'];
-   $contact->from_email = $_POST['email'];
-  $contact->from_phone = $_POST['phone'];
+  $contact->from_name = $_POST['first-name'];
+  $contact->from_email = $_POST['email'];
+
  
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
