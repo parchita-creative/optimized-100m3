@@ -998,6 +998,20 @@ font-family: 'Lato', sans-serif;
   cursor: pointer;
 }
 
+#contact .contact-form button[type="submit"] {
+  background: #22CD7F;
+  border: 0;
+  border-radius: 20px;
+  padding: 8px 30px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+#contact .contact-form button[type="submit"]:hover {
+  background: #22CD7F;
+  cursor: pointer;
+}
+
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
