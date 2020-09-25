@@ -298,7 +298,7 @@
            
 
             <div class="form">
-              <form  class="ajaxForm contact-form" action="https://formcarry.com/s/1yBVC7lkQ" method="POST" id="my-formcarry"  accept-charset="UTF-8" >
+              <form id="my-form" class="ajaxForm contact-form" action="https://formcarry.com/s/1yBVC7lkQ" method="POST"   accept-charset="UTF-8" >
                 <div class="form-row">
                   <div class="form-group col-lg-6">
                     <input type="text" name="first_name" class="form-control" id="first_name" placeholder="First Name" required />
@@ -325,8 +325,8 @@
                   
                 </div>
                 
-                <div class="text-left"> <input type="submit" value=" Contact us" >
-                 <!-- <button type="submit" title="Send Message">Contact us</button>--></div>
+                <div class="text-left"> <!--<input type="submit" value=" Contact us" >-->
+                  <button type="submit" title="Send Message">Contact us</button></div>
                  
               </form>
             </div>
@@ -376,54 +376,30 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="https://carrier.formcarry.com/js/v1.js"></script>
-  <script>
-    formcarry({
-      form: "1yBVC7lkQ",
-      // id or the class name of the form element, only form element allowed
-      // works with css selectors
-      // # <= for id
-      // . <= for class
-      element: "#my-formcarry",
-      extraData: {
-        // add whatever you want
-        screenSize: `${window.screen.width}x${window.screen.height}`,
-        language: window.navigator.language,
-      },
-      // Success callback, you can show alert messages
-      // or redirect the user in this function
-      onSuccess: function( response){
-        alert("We received your submission, thank you!" );
-      },
-      // Error callback, a good place to show errors 
-      onError: function(error){
-        alert(error)
-      }
-    });
-  </script>
+  
 
   <script>
-$(function(){
-    $(".ajaxForm").submit(function(e){
-        e.preventDefault();
-        var href = $(this).attr("action");
-        $.ajax({
-            type: "POST",
-            dataType: "json",
-            url: href,
-            data: $(this).serialize(),
-            success: function(response){
-                if(response.status == "success"){
-                    alert("We received your submission, thank you!");
-                    $('#my-formcarry').trigger("reset");
-                  
-                }else{
-                    alert("An error occured: " + response.message);
-                }
-            }
-        });
-    });
-});
+      $(function(){
+          $(".ajaxForm").submit(function(e){
+              e.preventDefault();
+              var href = $(this).attr("action");
+              $.ajax({
+                  type: "POST",
+                  dataType: "json",
+                  url: href,
+                  data: $(this).serialize(),
+                  success: function(response){
+                      if(response.status == "success"){
+                          alert("We received your submission, thank you!");
+                          $('#my-form').trigger("reset");
+                        
+                      }else{
+                          alert("An error occured: " + response.message);
+                      }
+                  }
+              });
+          });
+      });
 </script>
 
 </body>
