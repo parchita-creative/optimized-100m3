@@ -394,7 +394,6 @@
       // or redirect the user in this function
       onSuccess: function( response){
         alert("We received your submission, thank you!" );
-        $('#my-formcarry').trigger("reset");
       },
       // Error callback, a good place to show errors 
       onError: function(error){
@@ -416,6 +415,7 @@ $(function(){
             success: function(response){
                 if(response.status == "success"){
                     alert("We received your submission, thank you!");
+                    $('#my-formcarry').trigger("reset");
                   
                 }else{
                     alert("An error occured: " + response.message);
