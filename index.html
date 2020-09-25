@@ -349,7 +349,7 @@
           <div class="col col-6 col-md-10 col-xs-6 col-sm-6 float-left">
            <p>&copy; Copyright <strong>100m3</strong></p> 
           </div>
-          <div class=" col col-6 col-md-2 col-xs-6 col-sm-6 float-right text-right">
+          <div class=" col col-6 col-md-2 col-xs-6 col-sm-6 float-right text-right ">
             <img src="assets/img/logo.png" alt="">
           </div>
         </div>
@@ -393,7 +393,8 @@
       // Success callback, you can show alert messages
       // or redirect the user in this function
       onSuccess: function( response){
-        alert("We received your submission, thank you!" + response)
+        alert("We received your submission, thank you!" );
+        $('#my-formcarry').trigger("reset");
       },
       // Error callback, a good place to show errors 
       onError: function(error){
@@ -415,6 +416,7 @@ $(function(){
             success: function(response){
                 if(response.status == "success"){
                     alert("We received your submission, thank you!");
+                  
                 }else{
                     alert("An error occured: " + response.message);
                 }
