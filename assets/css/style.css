@@ -61,6 +61,14 @@ font-family: 'Lato', sans-serif;
   #d-mobile-none{
     display: none;
   }
+  .careers-details{
+    margin-top: 20px;
+   
+  }
+
+  #careers .btn.btn-apply{
+    margin-bottom: 20px;
+  }
 }
 
 /* Prelaoder */
@@ -209,6 +217,10 @@ font-family: 'Lato', sans-serif;
   color: #00adee;
   text-decoration: none;
 }
+.main-nav li.active a{
+  color: #00adee; 
+}
+
 
 .main-nav .drop-down ul {
   display: block;
@@ -385,6 +397,77 @@ font-family: 'Lato', sans-serif;
   padding: 200px 0 120px 0;
 }
 
+#careers-details main #careers {
+  background: #FBFBFE;
+  padding: 60px 0;
+}
+.intro-careers-details {
+width: 100%;
+position: relative;
+background-color: #fff;
+padding: 200px 0 40px 0;
+}
+.intro-careers-details .intro-text{
+  color: #69758F;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+}
+.intro-careers-details .intro-text span{
+  margin-left: 10px;
+}
+
+.intro-careers-details .location-time{
+  color: #69758F;
+  font-weight: normal;
+font-size: 15px;
+}
+.intro-careers-details .intro-title{
+  color: #000;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0 0 10px 0;
+ 
+}
+.intro-careers-details h4.title-careers{
+  margin: 0 0 20px 0;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+}
+
+
+#careers-details .details h4.title-careers{
+  margin: 0 0 20px 0;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+}
+#careers-details .details p{
+  font-size: 15px;
+  color: #000;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+}
+
+#careers-details ul{
+  padding-inline-start: 20px;
+  list-style: none;
+}
+#careers-details ul.qualities-careers li::before {
+  content: "\2022";
+  color: #00ADEE;
+  display: inline-block; 
+  width: 23px;
+  margin-left: -1.5em;
+}
+
+#careers-details .btn.btn-apply{
+  
+  padding: 10px 32px;
+}
+
+
 #intro-careers .intro-text{
   color: #fff;
   margin: 0 0 10px 0;
@@ -393,12 +476,42 @@ font-family: 'Lato', sans-serif;
   color: #fff;
  
 }
-#careers .divider {
+#careers .divider, #careers-contain .divider {
   width: 10%;
-  height: 2px;
-  background: #4f4f4f;
+  height: 1px;
+  background: #4b4d52;
   border: 0;
-  margin: 20px 0;
+  margin: 14px 0;
+}
+#careers-contain h3.title{
+  font-size: 20px;
+  
+
+}
+
+#careers-contain h4.title-careers {
+  margin: 0;
+  color: #4F4F4F;
+  font-weight: normal;
+  font-size: 20px;
+}
+#careers-contain p.location-careers{
+  font-weight: bold;
+font-size: 18px;
+color: #4F4F4F;
+}
+.btn.btn-apply{
+  background-color: #41BE74;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #FBFBFE;
+  padding: 10px 80px;
+}
+.btn.btn-apply:hover{
+  background-color: #41BE74;
+  color: #FBFBFE;
+  opacity: 0.8;
+
 }
 
 #intro-video {
@@ -1011,6 +1124,78 @@ font-family: 'Lato', sans-serif;
   background: #22CD7F;
   cursor: pointer;
 }
+
+/* FORMULARIO DE CAREERS*/
+
+.form-apply label{
+  color:#69758F;
+}
+
+.form-apply input, .form-apply textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 16px;
+  color: #69758F;
+  background-color: #fff;
+  border: none;
+ 
+}
+
+.form-apply textarea {
+  resize: none;
+}
+.form-apply ::placeholder{
+  color: #69758F;
+}
+input[type="file"]#resume-cv {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  }
+  label[for="resume-cv"] {
+    background: #EBECF0;
+    border: 0.5px solid #FFFFFF;
+    box-sizing: border-box;
+    padding: 12px 30px;
+    font-size: 14px;
+    color: #69758F;
+    width: fit-content;
+    text-align: center;
+ }
+/*
+input[type="file"]::-webkit-file-upload-button {
+  
+  visibility: hidden;
+  
+}
+
+
+input[type="file"]::before {
+
+  content: url("../img/icon-adj.png");
+  display: inline-block;
+  background: #EBECF0;
+  border: 0.5px solid #FFFFFF;
+  box-sizing: border-box;
+  padding: 10px 150px 10px 29px;
+  font-size: 14px;
+  color: #69758F;
+ 
+}
+input[type="file"]::after {
+  content: "Attach Resume ";
+  margin: 0 0 0 -290px;
+}
+*/
+
+
+
+
+
+
 
 @-webkit-keyframes animate-loading {
   0% {
