@@ -1130,6 +1130,9 @@ font-family: 'Lato', sans-serif;
 .form-apply label{
   color:#69758F;
 }
+.form-apply label span{
+  color:#ff796f;
+}
 
 .form-apply input, .form-apply textarea {
   border-radius: 0;
